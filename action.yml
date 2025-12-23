@@ -1,4 +1,4 @@
-name: 'Sandeep Lightning Greet'
+name: 'automate dashboards'
 description: 'A fast greeting action using name, place, and age.'
 inputs:
   name:
