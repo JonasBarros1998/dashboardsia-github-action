@@ -1,0 +1,20 @@
+name: 'Sandeep Lightning Greet'
+description: 'A fast greeting action using name, place, and age.'
+inputs:
+  name:
+    description: 'Your name'
+    required: true
+  place:
+    description: 'Your location'
+    required: true
+  age:
+    description: 'Your age'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello ${{ inputs.name }}! You're ${{ inputs.age }} years old and live in ${{ inputs.place }}."
+      shell: bash
+branding:
+  icon: "zap"
+  color: "yellow"
