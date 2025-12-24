@@ -28,6 +28,6 @@ jobs:
         run: |
           aws sts get-caller-identity
       - name: Issue contents
-        uses: ../../action.yaml
+        uses: actions/automate-dashboards
         with:
           name: "DashboardsIA"

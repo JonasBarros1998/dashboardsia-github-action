@@ -2,7 +2,7 @@
   "name": "automate dashboards",
   "version": "1.0.0",
   "scripts": {
-    "build": "ncc build index.ts -o dist"
+    "build": "ncc build index.ts -o ../dist && cp action.yml ../dist/ && cp -r node_modules ../dist"
   },
   "dependencies": {
     "@actions/core": "^1.10.0",
