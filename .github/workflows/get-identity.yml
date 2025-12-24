@@ -6,7 +6,7 @@ on:
     types: [opened]
 
 env:
-  AWS_REGION : "us-east-1"
+  AWS_REGION: "us-east-1"
 
 permissions:
   id-token: write
@@ -27,3 +27,7 @@ jobs:
       - name: Sts GetCallerIdentity
         run: |
           aws sts get-caller-identity
+      - name: Issue contents
+        uses: ../../action.yaml
+        with:
+          name: "DashboardsIA"
