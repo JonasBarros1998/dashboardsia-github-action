@@ -1,4 +1,4 @@
-name: 'automate dashboards'
+name: 'automate dashboards' 
 description: 'A fast greeting action using name, place, and age.'
 runs:
   using: "node20"
